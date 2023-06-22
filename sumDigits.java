@@ -41,25 +41,24 @@ Now we can just add this last single digit to sum, and we'll have a final sum of
 
 public class MyClass {
     public static void main(String args[]) {
-        int sumDigits = sumDigits (555);
-
-
-      System.out.println(sumDigits);
+        
+      System.out.println(sumDigits (555));
+      System.out.println(sumDigits (-2));
+      System.out.println(sumDigits (0));
+      System.out.println(sumDigits (1000));
     }
     
     public static int sumDigits (int number){
         if (number<0){
             return -1;
-        }else {
+        }
         int sum = 0;
-        int i = 0;
         while (number>=10){
-            i=number%10;
+            int i=number%10;
             sum+=i;
             number = number/10;
         }
         sum+=number;
         return sum;
-        }
     }
 }
