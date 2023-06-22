@@ -42,8 +42,6 @@ Now we can just add this last single digit to sum, and we'll have a final sum of
 public class MyClass {
     public static void main(String args[]) {
         int sumDigits = sumDigits (555);
-
-
       System.out.println(sumDigits);
     }
     
