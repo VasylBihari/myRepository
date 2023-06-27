@@ -3,7 +3,7 @@ The method should only take a number that is a positive number.
 If a negative number is passed, it should return -1, meaning an invalid value was passed.
 The method should parse out each digit from the number, and sum the digits up.
 So if 125 is the value passed to the method, the code should sum each digit, in this case, 1 + 2 + 5, and return 8, as a value.
-
+_______________________________________________________________________________________________________________________________________
 
 public class MyClass {
     public static void main(String args[]) {
