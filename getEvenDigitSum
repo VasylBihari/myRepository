@@ -1,0 +1,20 @@
+public class MyClass {
+    public static void main(String args[]) {
+
+      System.out.println(sumDigits(122));
+    }
+    public static int sumDigits (int number){
+        if (number<0){
+            return -1;
+        }
+        int sum = 0;
+        while (number>=10){
+            int i=number%10;
+            if (i%2==0){
+            sum+=i;
+            }
+            number = number/10;
+            }
+        return sum+number;
+    }
+}
