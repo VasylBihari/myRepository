@@ -1,9 +1,10 @@
-public class MyClass {
+public class Main {
     public static void main(String args[]) {
-
-      System.out.println(sumDigits(122));
+        System.out.println(getEvenDigitSum (554));
+        System.out.println(getEvenDigitSum (-5));
+        System.out.println(getEvenDigitSum (101));
     }
-    public static int sumDigits (int number){
+    public static int getEvenDigitSum (int number){
         if (number<0){
             return -1;
         }
@@ -11,10 +12,13 @@ public class MyClass {
         while (number>=10){
             int i=number%10;
             if (i%2==0){
-            sum+=i;
+                sum+=i;
             }
             number = number/10;
             }
+        if (number%2!=0){
+            number=0;
+        }
         return sum+number;
     }
 }
