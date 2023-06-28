@@ -2,9 +2,6 @@
 Each number should be within the range of 10 (inclusive) - 1000 (inclusive). If one of the numbers is not within the range, the method should return false.
 The method should return true if at least two of the numbers share the same rightmost digit; otherwise, it should return false. */
 
-
-
-
 public class MyClass {
     public static void main(String args[]) {
 
@@ -24,7 +21,6 @@ public class MyClass {
             return false;
         }
     }
-    
     public static boolean isValid (int numFour){
         if (numFour<10||numFour>1000){
             return false;
