@@ -1,7 +1,5 @@
 /*Write a class with the name Person. The class needs three fields (instance variables) with the names firstName, lastName of type String and age of type int. 
-
 Write the following methods (instance methods):
-
 *Method named getFirstName without any parameters, it needs to return the value of the firstName field.
 *Method named getLastName without any parameters, it needs to return the value of the lastName field.
 *Method named getAge without any parameters, it needs to return the value of the age field.
@@ -12,9 +10,9 @@ Write the following methods (instance methods):
 *Method named getFullName without any parameters, it needs to return the full name of the person.
     *In case both firstName and lastName fields are empty, Strings return an empty String.
     *In case lastName is an empty String, return firstName.
-    *In case firstName is an empty String, return lastName.
-    
-To check if s String is empty, use the method isEmpty from the String class. For example, firstName.isEmpty() returns true if the String is empty or in other words, when the String does not contain any characters.*/
+    *In case firstName is an empty String, return lastName.   
+To check if s String is empty, use the method isEmpty from the String class. 
+For example, firstName.isEmpty() returns true if the String is empty or in other words, when the String does not contain any characters.*/
 
 
 
