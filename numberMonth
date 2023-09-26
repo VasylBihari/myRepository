@@ -1,0 +1,28 @@
+/*Дано номер місяця – ціле число в діапазоні 1–12 (1 – січень, 2 – лютий і так далі). Визначте
+кількість днів цього місяця для невисокосного року.*/
+
+class Main {
+    public static void main(String[] args) {
+        
+        int month=11;
+        
+        switch (month){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                System.out.println ("number of days = " + 31);
+                break;
+            case 2:
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                System.out.println ("number of days = " + 30);
+                break;
+        }
+    }
+}
