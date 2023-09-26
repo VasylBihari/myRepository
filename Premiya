@@ -1,0 +1,45 @@
+/*створіть клас Premium. Напишіть програму розрахунку
+нарахування премійпрацівникам. Премії розраховуються згідно з вислугою років. Якщо вислуга
+до 5 років, премія становить 10% від заробітної плати. Якщо вислуга від 5 років (включно) до 10
+років, то премія становить 15% від
+заробітної плати. Якщо вислуга від 10 років (включно) до 15 років, премія становить 25% від
+заробітної
+плати. Якщо вислуга від 15 років (включно) до 20 років, премія становить 35% від заробітної
+плати. Якщовислуга від 20 років (включно) до 25 років, премія становить 45% від заробітної
+плати. Якщо вислуга від 25 років (включно) та більше, премія складає 50% від заробітної плати.
+Результати розрахунку виведіть на екран.*/
+
+class Premium {
+    public static void main(String[] args) {
+        
+        double premiya;
+        double zp = 1000;
+        double vysluha=45;
+        
+        if (vysluha<5){
+            premiya=zp*0.1;
+            zp+=premiya;
+            System.out.println(zp);
+        } else if (vysluha>=5&&vysluha<10){
+            premiya=zp*0.15;
+            zp+=premiya;
+            System.out.println(zp);
+        } else if (vysluha>=10&&vysluha<15){
+            premiya=zp*0.25;
+            zp+=premiya;
+            System.out.println(zp);
+        }else if (vysluha>=15&&vysluha<20){
+            premiya=zp*0.35;
+            zp+=premiya;
+            System.out.println(zp);
+        }else if (vysluha>=20&&vysluha<25){
+            premiya=zp*0.45;
+            zp+=premiya;
+            System.out.println(zp);
+        } else if (vysluha>25){
+            premiya=zp*0.50;
+            zp+=premiya;
+            System.out.println(zp);
+        }
+    }
+}
