@@ -1,0 +1,36 @@
+створіть клас Arithmetic Average.
+Вирахуйте середнє арифметичне трьох цілих значень і виведіть його на екран.
+
+************************
+
+public class ArithmeticAverage {
+    public static void main(String[] args) {
+        avg (15,25,1);
+    }
+
+    public static void avg(int x, int y, int z){
+        double avgNumber = (double) (x+y+z)/3;
+        System.out.println("avg = " + avgNumber);
+    }
+}
+
+******************************
+
+import java.util.Scanner;
+
+public class ArithmeticAverage {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner (System.in);
+        System.out.println ("Enter first number: ");
+        double first = sc.nextDouble();
+        System.out.println ("Enter second number: ");
+        double second = sc.nextDouble();
+        System.out.println ("Enter third number: ");
+        double third = sc.nextDouble();
+        
+        double avg = (double) ((first+second+third)/3);
+        
+        System.out.println ("AVG = " + avg);
+    }
+}
