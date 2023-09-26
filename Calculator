@@ -1,0 +1,48 @@
+/*створіть клас Calculator.
+Напишіть програму «Консольний калькулятор».
+Створіть дві змінні з іменами operand1 та operand2. Задайте змінним деякі довільні значення.
+Запропонуйте користувачу ввести знак арифметичної операції. Візьміть значення, введене
+користувачем,і помістіть його в рядкову змінну sign.
+Для організації вибору алгоритму обчислювального процесу використовуйте перемикач switch.
+Виведіть на екран результат виконання арифметичної операції.*/
+
+
+
+import java.util.Scanner;
+
+class Calculator {
+    public static void main(String[] args) {
+        
+        double operand1 = 2;
+        double operand2 = 0;
+        double result; 
+        
+        Scanner sc = new Scanner (System.in);
+        System.out.println ("Enter znak: ");
+        String sign = sc.nextLine();
+        
+        switch (sign){
+            
+            case ("+"):
+                result= operand1+operand2;
+                System.out.println (result);
+                break;
+            case ("-"):
+                result= operand1-operand2;
+                System.out.println (result);
+                break;    
+            case ("/"):
+                if (operand2==0){
+                    System.out.println("Impossible. It is a mistake");
+                }else {
+                result= operand1/operand2;
+                System.out.println (result);
+                }
+                break;
+            case ("*"):
+                result= operand1*operand2;
+                System.out.println (result);
+                break;
+        }
+    }
+}
