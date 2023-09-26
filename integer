@@ -1,0 +1,16 @@
+/*Дано ціле число. Якщо воно є позитивним, додайте до нього 1; інакше не змінюйте його.
+Виведіть отримане число.*/
+
+class Main {
+    public static void main(String[] args) {
+        
+        int number=1;
+        
+        if (number>0){
+            number++;
+        }else{
+        number+=0;
+        }
+        System.out.println(number);
+    }
+}
