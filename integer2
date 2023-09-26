@@ -1,0 +1,16 @@
+/*Дано ціле число. Якщо воно є позитивним, додайте до нього 1; інакше відніміть із нього 2.
+Виведіть отримане число.*/
+
+class Main {
+    public static void main(String[] args) {
+        
+        int number=-1;
+        
+        if (number>0){
+            number++;
+        }else{
+        number-=2;
+        }
+        System.out.println(number);
+    }
+}
