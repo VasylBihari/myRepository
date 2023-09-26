@@ -1,0 +1,38 @@
+create a Circle class.
+Create a constant named PI (the number π "pi"), create a radius variable named - r.
+Using the formula πR2, calculate the area of the circle and display the result on the screen.
+
+*********************
+
+public class Circle {
+    public static void main(String[] args) {
+
+        areaCircle(10);
+
+    }
+
+    public static void areaCircle (double r){
+        final double PI = 3.14159265359;
+        double areaCircle=PI*r*r;
+
+        System.out.println("Площа круга = "  + areaCircle);
+    }
+}
+***************************************************************
+
+import java.util.Scanner;
+
+public class Circle {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner (System.in);
+        System.out.print ("Enter radius: ");
+        double r = scanner.nextDouble();
+        
+        final double PI = 3.14159265359;
+        double areaCircle=PI*r*r;
+
+        System.out.println("Area of circle = "  + areaCircle);
+    }
+}
+*******************************************************************
