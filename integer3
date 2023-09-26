@@ -1,0 +1,22 @@
+/*Дано три цілих числа. Знайдіть максимальне, мінімальне та середнє.*/
+
+class Main{
+    public static void main(String[] args) {
+        
+        int x=3, y=1, z=2;
+        
+        if(x>y&y>z){
+        System.out.println("x-max, y-mid, z-min");
+        }else if (x>y&z>y&x>z){
+            System.out.println("x-max, z-mid, y-min");
+        }else if (y>x&x>z){
+            System.out.println("y-max, x-mid, z-min");
+        } else if (y>x&z>x&y>z){
+            System.out.println("y-max, z-mid, x-min");
+        } else if (z>x&x>y){
+            System.out.println("z-max, x-mid, y-min");
+        } else if (z>x&y>x&z>y){
+            System.out.println("z-max, y-mid, x-min");
+        }
+    }
+}
