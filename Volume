@@ -1,0 +1,42 @@
+/*створіть клас Volume.
+Напишіть програму розрахунку об'єму – V та площі поверхні -S циліндра.
+Об'єм V циліндра радіусом – R та висотою – h, вираховується за формулою: V
+= πR2hПлоща поверхні циліндра вираховується за формулою: S = 2πR2 +
+2πR2 = 2πR(R+h)
+Результати розрахунків виведіть на екран.*/
+
+**************************************************************************
+public class Volume {
+    public static void main(String[] args) {
+        
+        final double PI = 3.14159265359;
+        double r = 5;
+        double h = 3;
+        double v = PI*r*r*h;
+        double s= 2*PI*r*r;
+        
+        System.out.println ("volume of cylinder = " + v);
+        System.out.println ("area of surface = " + s);
+    }
+}
+************************************************************************
+import java.util.Scanner;
+
+public class Volume {
+    public static void main(String[] args) {
+        
+        final double PI = 3.14159265359;
+        
+        Scanner sc = new Scanner (System.in);
+        System.out.println ("Enter radius: ");
+        double r = sc.nextDouble();
+        System.out.println ("Enter height: ");
+        double h = sc.nextDouble();
+        
+        double v = PI*r*r*h;
+        double s= 2*PI*r*r;
+        
+        System.out.println ("volume of cylinder = " + v);
+        System.out.println ("area of surface = " + s);
+    }
+}
