@@ -1,0 +1,26 @@
+/*створіть
+клас Parity. Напишіть програму, яка виконуватиме перевірку чисел на парність. Запропонуйте
+два варіанти розв'язку поставленого завдання.*/
+
+
+//first
+class Parity {
+    public static void main(String[] args) {
+      int x=21;
+      if (x%2==0){
+          System.out.println ("even");
+      } else {
+          System.out.println ("odd");
+      }
+    }
+}
+
+//second
+
+class Parity {
+    public static void main(String[] args) {
+        int x=21;
+        String y = (x%2==0)?"even":"odd";
+        System.out.println(y);
+    }
+}
