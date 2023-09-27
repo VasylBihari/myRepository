@@ -1,0 +1,34 @@
+/*створіть клас SumMin. Дано два числа A та B (A <B). Виведіть суму
+всіх чисел,які розташовані між цими числами на екран.*/
+
+public class SumMin {
+    public static void main(String[] args) {
+        int a=98;
+        int b=100;
+        int sum=0;
+
+        for (int i=a+1; i<b; i++){
+            sum+= i;
+        }
+        System.out.println(sum);
+    }
+}
+**************************************************
+import java.util.Scanner;
+
+public class SumMin{
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a: ");
+        int a = sc.nextInt();
+        System.out.print("enter b: ");
+        int b = sc.nextInt();
+        int sum=0;
+
+        for (int i=a+1; i<b; i++){
+            sum+= i;
+        }
+        System.out.println("Sum = " + sum);
+    }
+}
