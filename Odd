@@ -1,0 +1,35 @@
+/*Дано два числа A та B (A <B). Виведіть усі
+непарні значення, які розташовані між цими числами.*/
+
+public class SumMin{
+    public static void main(String[] args) {
+        int a=7;
+        int b=10;
+
+        for (int i=a+1; i<b; i++){
+            if (i%2==1) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
+
+************************************************************
+import java.util.Scanner;
+
+public class SumMin{
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a: ");
+        int a = sc.nextInt();
+        System.out.print("enter b: ");
+        int b = sc.nextInt();
+
+        for (int i=a+1; i<b; i++) {
+            if (i % 2 == 1) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
