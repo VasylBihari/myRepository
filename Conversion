@@ -1,0 +1,19 @@
+/*Create a Conversion class. Write a program that will convert currencies. The user enters:
+1) an amount of money in a certain currency;
+2) conversion rate to another currency.
+Arrange to display the result of the currency conversion operation on the screen.*/
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter sum in UAH: ");
+        int sum = sc.nextInt();
+        System.out.print("Enter course in USD: ");
+        int course = sc.nextInt();
+        int cash = sum/course;
+        System.out.println(sum + " UAH" + " = " + cash  + " USD");
+    }
+}
