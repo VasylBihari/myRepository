@@ -1,0 +1,40 @@
+/*create an Arithmetics class. Create four methods to execute
+arithmetic operations with names: add – addition, sub – subtraction, mul – multiplication, div –
+division. Each method must accept two integer arguments and display the result
+performing an arithmetic operation corresponding to the method name. The split method of the div must execute
+checking for an attempted division by zero.
+It is necessary to provide the user with the ability to enter operand values and signs from the keyboard
+arithmetic operation to perform calculations..*/
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter x: ");
+        int x= sc.nextInt();
+        System.out.println("enter y: ");
+        int y = sc.nextInt();
+
+        System.out.println("sum = " + add(x,y));
+        System.out.println("subtraction = " + sub (x,y));
+        System.out.println("multiplication = " + mul(x,y));
+        System.out.println("division = " + div(x,y));
+    }
+    static int add (int x, int y){
+        return x+y;
+    }
+    static int sub (int x, int y){
+        return x-y;
+    }
+    static int mul (int x, int y){
+        return x*y;
+    }
+    static int div (int x,int y){
+        if(y==0){
+            System.out.println("error");
+        }
+        return x/y;
+    }
+}
