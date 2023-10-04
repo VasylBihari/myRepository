@@ -1,0 +1,31 @@
+/*Create a class named Rectangle. In the body of the class
+create two fields describing the lengths of the sides double side1, double side2. Create two methods,
+Calculating the area of a rectangle – double areaCalculator (double side1, double side2) and perimeter
+rectangle - double perimeterCalculator (double side1, double side2). Write a program that
+accepts the length of two sides of a rectangle from the user and displays the perimeter and
+square.*/
+
+import java.util.Scanner;
+
+public class Rectangle {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter side1: ");
+        double side1 = sc.nextDouble();;
+        System.out.print("enter side2: ");
+        double side2 = sc.nextDouble();
+
+        System.out.println("area " + perimeterCalculator(side1,side2));
+        System.out.println("perimetr " + areaCalculator(side1,side2));
+    }
+
+    public static double  areaCalculator (double side1, double side2){
+        return side1*side2;
+    }
+
+    public static double perimeterCalculator (double side1, double side2){
+        return (2*(side1+side2));
+    }
+}
+
