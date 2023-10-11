@@ -1,0 +1,23 @@
+/*create a project, package.
+Create a class MyArea, in it declare the constant PI = 3.14 and the static method areaOfCircle, which
+should take the radius and use PI to calculate the area of the circle.
+Create a Main class where to run this method.*/
+
+package packageOne;
+
+public class MyArea {
+    final static double PI = 3.14;
+
+    static double areaOfCircle (int radius){
+        double area = PI*Math.pow(radius,2);
+        return area;
+    }
+}
+
+package packageOne;
+
+public class Main {
+    public static void main(String[] args) {
+    System.out.println(MyArea.areaOfCircle(2));
+    }
+}
