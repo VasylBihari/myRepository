@@ -1,0 +1,49 @@
+/*Create a Car class with the fields year(int), color(String).
+Create a default constructor, a constructor with one and two parameters.
+Create a Main class in which to create instances by calling different constructors.*/
+
+package packageTwo;
+
+public class Car {
+    private int year;
+    private String color;
+
+    public Car(){
+    }
+
+    public Car(int year) {
+        this.year = year;
+    }
+
+    public Car(int year, String color) {
+        this.year = year;
+        this.color = color;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+}
+
+package packageTwo;
+
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car (1980);
+        Car car1 = new Car (1981, "red");
+        System.out.println("Year of car is " + car.getYear());
+        System.out.println("Year of car is " + car1.getYear() + ", color is " + car1.getColor());
+    }
+}
