@@ -1,1 +1,1 @@
-This repository contains my first codes for tasks from various training sites (ITVDN, HackerRank, Codewars,...)
+This repository contains my solutions to tasks for writing code in the various training sites (ITVDN, HackerRank, Codewars,...)
